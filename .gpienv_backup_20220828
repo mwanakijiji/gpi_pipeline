@@ -1,0 +1,20 @@
+# Set up environment variables for the GPI IFS Software
+# Bash Version
+# Source this file from your .bashrc file
+
+#----- Required paths -----------------
+# GPI_DATA_ROOT is a helper path only.
+# If desired you can set all paths independently
+export GPI_DATA_ROOT="/home/prunelle/data0/prunelle/"
+export GPI_DRP_QUEUE_DIR="${GPI_DATA_ROOT}queue/"
+export GPI_RAW_DATA_DIR="${GPI_DATA_ROOT}Raw/"
+export GPI_REDUCED_DATA_DIR="${GPI_DATA_ROOT}Reduced/"
+export GPI_CALIBRATIONS_DIR="${GPI_DATA_ROOT}pipeline_testing_dataset/"
+
+#----- $PATH and $IDL_PATH Configuration ---------------
+export PATH="${PATH}:/home/prunelle/gpi_pipeline/scripts/"
+export IDL_PATH="+/home/prunelle/gpi_pipeline/:+/home/prunelle/gpi_pipeline_external/:<IDL_DEFAULT>"
+
+#---- added by Eckhart -----
+#export GPI_CALIBRATIONS_DIR="/home/prunelle/gpi_pipeline/tests/test_pol/"
+export GPIES_DROPBOX_ROOT="/home/prunelle/gpi_nas/"

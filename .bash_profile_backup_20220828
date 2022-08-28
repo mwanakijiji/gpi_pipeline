@@ -1,0 +1,12 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+#export GPIES_DROPBOX_ROOT=/home/prunelle/gpi_nas
+export GPIES_DROPBOX_ROOT=/home/prunelle/gpi_nas0_local
