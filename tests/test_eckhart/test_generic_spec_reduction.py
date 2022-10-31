@@ -9,7 +9,7 @@ def test_betapic(pipeline, test_dir):
 
     Simple checks of spectral extraction products 
     """
-
+    print('yes')
     stem = "/home/prunelle/gpi2_pipeline_development/data/Reduced/140422"
     
     status, outrecipe, outfiles = pipeline.run_recipe( os.path.join(test_dir, recipename), rescanDB=True)
