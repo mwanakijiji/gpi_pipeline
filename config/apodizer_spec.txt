@@ -21,5 +21,8 @@ APOD_K2_G6207   1.905e-4   1	K2
 APOD_NRM_G6208  1e-4   1	NONE
 APOD_HL_G6209   1e-4   1	NONE
 APOD_HSTAR_G6210    1e-4   1	NONE
+# APOD_LS03SYMM ____ # TBD GPI2 specs
+# APOD_DUALPLANE ____ # TBD GPI2 specs
+# APOD_DUALPLANE_SYMM ____ # TBD GPI2 specs
 Unknown     NaN   1	NONE
 User Defined    1e-4   1	NONE
