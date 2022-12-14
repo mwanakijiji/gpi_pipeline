@@ -5,19 +5,30 @@ J	1027	1028	REAL	Vertical
 H	1021	1029	REAL	Vertical
 K1	1027	1028	REAL	Vertical
 K2	1027	1028	REAL	Vertical
+# K_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
+# J_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
+# H_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
 Y	1027	1028	REAL	Horizontal
 J	1027	1028	REAL	Horizontal
 H	1017	1026	REAL	Horizontal
 K1	1027	1028	REAL	Horizontal
 K2	1027	1028	REAL	Horizontal
+# K_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
+# J_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
+# H_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
 Y	1027	1028	DST	Horizontal
 J	1027	1028	DST	Horizontal
 H	1027	1028	DST	Horizontal
 K1	1027	1028	DST	Horizontal
 K2	1027	1028	DST	Horizontal
+# K_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
+# J_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
+# H_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
 Y	1027	1028	DST	Vertical
 J	1027	1028	DST	Vertical
 H	1027	1028	DST	Vertical
 K1	1027	1028	DST	Vertical
 K2	1027	1028	DST	Vertical
-
+# K_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
+# J_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
+# H_GPI2 ____ ____ ____ # TBD GPI2 specs or data simulations
