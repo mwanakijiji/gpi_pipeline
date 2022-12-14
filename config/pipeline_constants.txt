@@ -15,13 +15,16 @@ mems_rotation   0.017453293
 ifs_lenslet_scale       0.014161
 #
 #observatory location (deg, East lon)
+#(gemini north - WGS84)
+observatory_lat     19.82396
+observatory_lon     -155.46984
 #(gemini south - WGS84) 
-observatory_lat     -30.24075
-observatory_lon     -70.73669333333333
+#observatory_lat     -30.24075
+#observatory_lon     -70.73669333333333
 #
-#primary and secondary diameters (m) from http://dms.hia.nrc.ca/view.php?fDocumentId=2164
-primary_diam    7.7701
-secondary_diam  1.32090 ;  7.7701*0.17 - projected inner diameter of secondary hole
+#primary and secondary diameters (m) for Gemini North, from 'GPI Fundamental Values.docx'
+primary_diam    7.9080
+secondary_diam  1.34436 ;  7.9080*0.17 - projected inner diameter of secondary hole
  
 #
 #Rotation of frame in IFS image (orig. measurement by Marshall Perrin)
@@ -37,13 +40,20 @@ zero_pt_flux_J  3.3749556e-06
 zero_pt_flux_H  1.1490425e-06
 zero_pt_flux_K1	 5.2028166e-07
 zero_pt_flux_K2	 3.9821396e-07
+# zero_pt_flux_K_GPI2 ____ # TBD GPI2 filter curve
+# zero_pt_flux_J_GPI2 ____ # TBD GPI2 filter curve
+# zero_pt_flux_H_GPI2 ____ # TBD GPI2 filter curve
+
 # Central wavelengths of the filters. Determined when calculated zero point fluxes
 ; Filter        central_wavelength(um)
-cen_wave_Y  1.0604833
-cen_wave_J  1.2113351
-cen_wave_H  1.6392885
-cen_wave_K1  2.0567269
-cen_wave_K2  2.2032622
+cen_wave_Y  1.0604833 # GPI1 and GPI2
+cen_wave_J  1.2113351 # GPI1 only? TBD
+cen_wave_H  1.6392885 # GPI1 only
+cen_wave_K1  2.0567269 # GPI1 only
+cen_wave_K2  2.2032622 # GPI1 only
+# cen_wave_K_GPI2 ____ # TBD GPI2 filter curve
+# cen_wave_J_GPI2 ____ # TBD GPI2 filter curve
+# cen_wave_H_GPI2 ____ # TBD GPI2 filter curve
 
 # size of coronagraph focal plane masks, in arcseconds
 fpm_diam_y   0.156
