@@ -19,11 +19,11 @@ def test_spec(pipeline, test_dir):
     
     # Did we get the output files we expected?
     assert len(outfiles)==nfiles_expected, "Number of output files does not match expected value."
-    assert stem+"/test_S20140422S0341"+file_string+"_spdc-adim.fits" in outfiles, "Output files didn't contain one of the intermediate ADI images."
-    assert stem+"/test_S20140422S0341"+file_string+"_spdc-adim_resadi.fits" in outfiles, "Output files didn't contain the final residual ADI image."    
+    assert stem+"/S20140422S0341"+file_string+"_spdc-adim.fits" in outfiles, "Output files didn't contain one of the intermediate ADI images."
+    assert stem+"/S20140422S0341"+file_string+"_spdc-adim_resadi.fits" in outfiles, "Output files didn't contain the final residual ADI image."    
  
     # Are the contents of that file what we expected?
-    cube = gpipy.read( stem+"/test_S20140422S0341"+file_string+"_spdc-adim_resadi.fits" )
+    cube = gpipy.read( stem+"/S20140422S0341"+file_string+"_spdc-adim_resadi.fits" )
    
     # ADI residual frame should still be the same IFS type as the original FITS file 
     assert cube.filetype=='Spectral Cube', "Wrong output file type"
