@@ -3,7 +3,7 @@ import gpipy
 
 recipename = 'gpi2_adi_fits_keyword_waveleng_spec.xml'
 file_string = "_keyword_waveleng"
-nfiles_expected = 91 # 45 spdc frames, 45 spdc_adi frames, 1 spdc_adi_resadi frame
+nfiles_expected = 77 # 38 spdc frames, 38 spdc_adi frames, 1 spdc_adi_resadi frame
 
 def test_spec(pipeline, test_dir):
     """ End to end test for GPI spectral reductions
