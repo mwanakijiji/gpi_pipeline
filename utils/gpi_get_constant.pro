@@ -1,4 +1,4 @@
-function gpi_get_constant, settingname, expand_path=expand_path, integer=int, bool=bool, string=string, rescan=rescan,silent=silent, default=default, double=double
+function gpi_get_constant, settingname, expand_path=expand_path, integer=int, bool=bool, string=string, rescan=rescan,silent=silent, default=default, double=double, gpi2=gpi2
 ;+
 ; NAME: gpi_get_constant
 ; 
@@ -23,6 +23,7 @@ function gpi_get_constant, settingname, expand_path=expand_path, integer=int, bo
 ;	/silent			Don't print any warning messages if setting not found.
 ;       /double                 Null op if anything else is set (for
 ;                               backwards compatibility)
+;       /gpi2                   1 if relevant FITS file is GPI2 data
 ; OUTPUTS:
 ;	returns the value stored in the file
 ;
