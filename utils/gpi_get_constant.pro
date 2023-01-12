@@ -1,4 +1,4 @@
-function gpi_get_constant, settingname, expand_path=expand_path, integer=int, bool=bool, string=string, rescan=rescan,silent=silent, default=default, double=double, gpi2=gpi2
+function gpi_get_constant, settingname, frame_header=frame_header, expand_path=expand_path, integer=int, bool=bool, string=string, rescan=rescan,silent=silent, default=default, double=double
 ;+
 ; NAME: gpi_get_constant
 ; 
@@ -12,6 +12,8 @@ function gpi_get_constant, settingname, expand_path=expand_path, integer=int, bo
 ;	settingname		name of string to look up in that config file
 ;
 ; KEYWORD:
+;       frame_header=           Header of the FITS file, which allows function to determine
+;                                 if GPI1 or GPI2 constants are needed
 ; 	/int			Cast result to integer before returning
 ;       /string                 Leave value as string
 ; 	/bool			Cast result to boolean (byte) before returning
@@ -23,7 +25,6 @@ function gpi_get_constant, settingname, expand_path=expand_path, integer=int, bo
 ;	/silent			Don't print any warning messages if setting not found.
 ;       /double                 Null op if anything else is set (for
 ;                               backwards compatibility)
-;       /gpi2                   1 if relevant FITS file is GPI2 data
 ; OUTPUTS:
 ;	returns the value stored in the file
 ;
