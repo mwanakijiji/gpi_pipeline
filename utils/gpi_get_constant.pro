@@ -55,7 +55,18 @@ function gpi_get_constant, settingname, frame_header=frame_header, expand_path=e
      allconstants = {parameters:names, values: values}
   endif
   
-  ;;now retrieve the desired parameter
+  ;;now retrieve the desired parameteri
+
+  ;;check if FITS file is from GPI2.0; if it is, certain constants will have different vals and will have a '_gpi2' suffix in name 
+  constants_list = ["observatory_lat","observatory_lon","primary_diam","secondary_diam"] ; affected list of keywords with different GPI1/GPI2 values
+  cond_gpi2 = gpi_get_keyword(*frame_header.pri_header,*frame_header.ext_header,"PROJECT") ; check header for keyword PROJECT (only GPI2.0 files have it)
+  cond_match = FIX(TOTAL(STRMATCH(constants_list,settingname))) EQ FIX(1) ; if there is a match between settingname and affected constants
+  ; if search for 'PROJECT' keyword did not return null, and if settingname is in the affected list
+  IF ((cond_gpi2 NE LONG(0)) && (cond_match EQ LONG(1))) THEN BEGIN
+    settingname=settingname+"_gpi2"
+    message,/info,"GPI2 frame detected; adding suffix '_gpi2' to constant name"
+  ENDIF
+
   wm = where(strmatch(allconstants.parameters, settingname, /fold_case), ct)
   if ct eq 0 then begin
      ;; no match found!
